@@ -15,4 +15,8 @@ export class NovoUsuarioService {
       novoUsuario
     );
   }
+
+  verificaUsuarioExistente (nomeDoUsuario: String) {
+    return this.http.get(`http://localhost:3000/user/exists/${nomeDoUsuario}`);
+  }
 }
