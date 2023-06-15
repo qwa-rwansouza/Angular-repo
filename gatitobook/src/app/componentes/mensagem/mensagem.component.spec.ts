@@ -13,11 +13,7 @@ describe('MensagemComponent', () => {
     .compileComponents();
   });
 
-  beforeEach(() => {
-    fixture = TestBed.createComponent(MensagemComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+
 
   it('should create', () => {
     expect(component).toBeTruthy();
